@@ -15,6 +15,7 @@ Open Session
 Login Session
     [Arguments]     ${email}       ${pass}
     Open Session
+    Go To           ${base_url}/login
     Login With      ${email}      ${pass}
 
 Close Session

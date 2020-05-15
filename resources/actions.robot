@@ -3,6 +3,8 @@ Documentation       Aqui teremos todas a palavras de ação dos testes autoamtiz
 
 Library     SeleniumLibrary
 
+Library     libs/database.py
+
 Resource    pages/BasePage.robot
 Resource    pages/SideBar.robot
 Resource    pages/LoginPage.robot
