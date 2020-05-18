@@ -8,6 +8,7 @@ Library     libs/database.py
 Resource    pages/BasePage.robot
 Resource    pages/SideBar.robot
 Resource    pages/LoginPage.robot
+Resource    pages/ProductPage.robot
 
 ***Keywords***
 ## steps
@@ -38,24 +39,9 @@ Dado que eu tenho um novo produto
 
     Set Test Variable      ${product_json}
 
-# Desafio: Implementar Page Object para os dois steps abaixo.
-# Crie o arquivo ProductPage
-
-Quando eu cadastro deste produto
-    Wait Until Element Is Visible   class:product-add
-    Click Element                   class:product-add
-
-    Input Text      css:input[placeholder$="produto?"]      ${product_json['title']}
-
-    # selecione categoria
-    Click Element   css:input[placeholder^=Gat]
-
-    Wait Until Element Is Visible       xpath://li//span[text()='${product_json['cat']}']
-    Click Element                       xpath://li//span[text()='${product_json['cat']}']
-
-    Input Text      css:input[name=price]            ${product_json['price']}
-
-    Click Element   id:create-product
+Quando faço o cadastro deste produto
+    ProductPage.Go To Add Form
+    ProductPage.Create New Product  ${product_json}
 
 Então devo ver este item na lista
     Table Should Contain    class:table     ${product_json['title']}

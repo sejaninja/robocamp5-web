@@ -15,5 +15,5 @@ Test Teardown       After Test
 ***Test Cases***
 Novo produto
     Dado que eu tenho um novo produto   dk.json
-    Quando eu cadastro deste produto
+    Quando faço o cadastro deste produto
     Então devo ver este item na lista
