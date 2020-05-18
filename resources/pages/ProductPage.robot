@@ -5,6 +5,7 @@ Documentation       ProductPage
 
 ***Variables***
 ${PRODUCT_ADD}        class:product-add
+${ALERT_DANGER}       class:alert-danger
 
 ***Keywords***
 Go To Add Form
