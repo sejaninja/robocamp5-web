@@ -1,0 +1,10 @@
+{
+    "title": "Zelda",
+    "cat": "Nintendo",
+    "price": "199.99",
+    "desc": "RPG muito legal!",
+    "producers": [
+        "Nintendo", "Konami"
+    ],
+    "file_name": "zelda.jpg"
+}

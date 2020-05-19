@@ -16,7 +16,7 @@ Novo produto
     [tags]      new_product
     Dado que eu tenho um novo produto   dk.json
     Quando faço o cadastro desse produto
-    Então devo ver este item na lista
+    Então devo ver esse item na lista
 
 Produto duplicado
     [tags]      dup

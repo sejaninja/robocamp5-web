@@ -20,9 +20,8 @@ Apagar produto
     E confirmo a solicitação
     Então não devo ver esse item no catálogo
 
-# Desafio do Ninja
 Desistir da remoção
-    Dado que eu tenho o rpoduto "zelda.json"
+    Dado "zelda.json" é um produto indesejado
     Quando solicito a exclusão
     Mas cancelo a solicitação
-    Então devo ver este esse na lista
+    Então devo ver esse item na lista

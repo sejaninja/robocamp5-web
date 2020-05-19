@@ -21,6 +21,9 @@ Request Removal
 Confirm Removal
     Click Element   class:swal2-confirm
 
+Cancel Removal
+    Click Element   class:swal2-cancel
+
 Create New Product
     [Arguments]     ${product_json}
 
