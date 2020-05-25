@@ -4,7 +4,7 @@ Documentation   Login
 ...             Quero me autenticar no sistema
 ...             Para que eu possa gerenciar os produtos da loja virtual
 
-Resource        ../resources/actions.robot
+Resource        ../../resources/actions.robot
 
 Suite Setup         Open Session
 Suite Teardown      Close Session

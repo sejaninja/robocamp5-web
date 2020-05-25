@@ -9,9 +9,6 @@ Library     libs/database.py
 Resource    helpers.robot
 
 Resource    pages/BasePage.robot
-Resource    pages/SideBar.robot
-Resource    pages/LoginPage.robot
-Resource    pages/ProductPage.robot
 
 ***Keywords***
 ## steps
@@ -26,8 +23,8 @@ Então devo ser autenticado
     Wait Until Element Contains         ${LOGGED_USER}      Papito
     
 Então devo ver a mensagem de alerta "${expect_alert}"
-    Wait Until Element Is Visible       ${DIV_ALERT}
-    Element Text Should Be              ${DIV_ALERT}     ${expect_alert}
+    Wait Until Element Is Visible       ${ALERT}
+    Element Text Should Be              ${ALERT}     ${expect_alert}
 
 # produtos
 
@@ -49,12 +46,19 @@ Quando faço o cadastro desse produto
     ProductPage.Go To Add Form
     ProductPage.Create New Product  ${product_json}
 
+Quando tento cadastrar esse produto
+    ProductPage.Create New Product  ${product_json}
+
 Então devo ver esse item na lista
     Table Should Contain    class:table     ${product_json['title']}
 
-Então devo ver a mensagem de alerta
+Então devo ver a mensagem de erro
     [Arguments]         ${expect_alert}
     Wait Until Element Contains     ${ALERT_DANGER}      ${expect_alert}
+
+Então devo ver uma mensagem informativa
+    [Arguments]         ${expect_alert}
+    Wait Until Element Contains     ${ALERT_INFO}      ${expect_alert}
 
 # exclusão
 

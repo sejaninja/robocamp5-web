@@ -3,9 +3,6 @@ Documentation       LoginPage
 ...                 Representa a página login com todos os seus elemeentos
 ...                 E também suas funcionalidades
 
-***Variables***
-${DIV_ALERT}        class:alert
-
 ***Keywords***
 Login With
     [Arguments]     ${email}       ${pass}

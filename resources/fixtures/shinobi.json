@@ -1,10 +1,8 @@
 {
     "title": "Shinobi",
     "cat": "Mega Drive",
-    "price": "99.99",
-    "desc": "Outro jogo muito legal",
-    "producers": [
-        "Sega"
-    ],
+    "price": "",
+    "desc": "",
+    "producers": [],
     "file_name": ""
 }
