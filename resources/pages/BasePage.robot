@@ -25,7 +25,7 @@ Open Session
 
     Set Window Size     1440    900
 
-    Set Selenium Implicit Wait  5
+    Set Selenium Implicit Wait  15
 
 Login Session
     [Arguments]     ${email}       ${pass}
