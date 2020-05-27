@@ -13,7 +13,7 @@ Test Teardown       After Test
 
 ***Test Cases***
 Usuário autenticado
-    [tags]     success_login
+    [tags]     smoke
     Dado que acesso a página login
     Quando submeto minhas credenciais "papito@ninjapixel.com" e "pwd123"
     Então devo ser autenticado
