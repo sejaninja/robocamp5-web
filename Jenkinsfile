@@ -1,7 +1,7 @@
 pipeline {
    agent {
        docker {
-           image 'python:3.7.7-stretch'
+           image 'qaninja/python-wd'
            args '--network=skynet'
        }
    }
