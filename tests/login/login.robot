@@ -21,8 +21,9 @@ Usuário autenticado
     [Teardown]      Clear Local Storage
 
 Senha invalida
+    [tags]              lang
     [Template]          Tentativa de login
-    papito@ninjapixel.com       abc123      Usuário e/ou senha inválidos
+    papito@ninjapixel.com       abc123      ${invalid_pass}
 
 Email não cadastrado
     [Template]          Tentativa de login

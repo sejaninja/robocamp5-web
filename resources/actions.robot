@@ -10,6 +10,12 @@ Resource    helpers.robot
 
 Resource    pages/BasePage.robot
 
+# para trabalhar com multi idioma
+# robot -d ./logs -i lang -v lang:en -v browser:chrome tests\
+# Resource    lang/${lang}.robot
+
+Resource    lang/pt.robot
+
 ***Keywords***
 ## steps
 Dado que acesso a página login
